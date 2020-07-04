@@ -13,8 +13,10 @@ def main():
 
 def scan_submissions(submission)
     cleaned_title = submission.title.lower() #sets title to lowercase for easier parsing
-    if "[Vendor]" or "[Artisan]" or "[GB]" or "[IC]" or "[Service]" or "[Giveaway]" or "[Fundraiser]" in cleaned_title
-        
+    #if its not a Sale or Buy post, ignore it
+    if "[Vendor]" or "[Artisan]" or "[GB]" or "[IC]" or "[Service]" or "[Giveaway]" or "[Fundraiser]" in cleaned_title:
+        return
+    else
 
 
 
